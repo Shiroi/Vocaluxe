@@ -80,6 +80,22 @@
     background: #000000 !important;
 }
 
+.ui-input-text.ui-body-c {
+	color: #FFFFFF;
+}
+
+.ui-input-text.ui-body-c::-webkit-input-placeholder {
+	color: rgba(255,255,255,0.5);
+}
+
+.ui-input-text.ui-body-c:-ms-input-placeholder {
+	color: rgba(255,255,255,0.5);
+}
+
+.ui-input-text.ui-body-c::-moz-placeholder {
+	color: rgba(255,255,255,0.5);
+}
+
 .ui-custom-errorIcon {
     background: url(images/alert.png) !important;
     background-size: 42px 42px;
