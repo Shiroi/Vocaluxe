@@ -1033,7 +1033,14 @@
                 var promise = request({
                     url: "getAllSongs"
                 }).done(function (data) {
-                    allSongsCache = data;
+                    data.sort(function(a,b) {
+						if (a.Artist < b.Artist) return -1;
+						if (a.Artist > b.Artist) return 1;
+						if (a.Title < b.Title) return -1;
+						if (a.Title > b.Title) return 1;
+						return 0;
+					});
+					allSongsCache = data;					
                     handleGetAllSongs();
                 });
 
